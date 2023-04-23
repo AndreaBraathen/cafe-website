@@ -1,6 +1,6 @@
 export default {
    title: 'Menu Item',
-   name: 'menuitem',
+   name: 'menuItem',
    type: 'document',
    fields: [
       {
@@ -16,69 +16,35 @@ export default {
 				source: 'name'
 			}
       },
-      {
-         title: 'Price',
-         name: 'price',
-         type: 'number',
-         description: 'Prices in U.S. dollar',
-      },
-      {
-         title: 'Image',
-         name: 'image',
-         type: 'image',
-      },
-      {
-         title: 'Description',
-         name: 'description',
-         type: 'text',
-      },
-      {
-         title: 'Ingredients',
-         name: 'ingedients',
-         type: 'text',
-      },
-      {
-         title: 'Allergens',
-         name: 'allergens',
-         type: 'array',
-         of: [
-            {
-               type: 'reference',
-               to: [
-                  {
-                     type: 'allergen'
-                  }
-               ]
-            }
-         ]
-      },
-      {
-         title: 'May Contain Traces of',
-         name: 'mayContainTracesOf',
-         type: 'array',
-         of: [
-            {
-               type: 'reference',
-               to: [
-                  {
-                     type: 'allergen'
-                  }
-               ]
-            }
-         ]
-      },
-      {
-         title: 'Category',
-         name: 'category',
-			type: 'reference',
-			to: [
-				{
-					type: 'category',
-				}
-			]
-      }
-
-
-
+      // {
+      //    title: 'Menu selection',
+      //    name: 'menuSelection',
+      //    type: 'array',
+      //    of: [
+      //       {
+      //          type: 'reference',
+      //          to: [
+      //             {
+      //                type: 'babyFood'
+      //             },
+      //             {
+      //                type: 'coldDrink'
+      //             },
+      //             {
+      //                type: 'hotDrink'
+      //             },
+      //             {
+      //                type: 'salad'
+      //             },
+      //             {
+      //                type: 'sandwich'
+      //             },
+      //             {
+      //                type: 'sweet'
+      //             },
+      //          ]
+      //       }
+      //    ]
+      // },
    ]
 }
