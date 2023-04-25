@@ -32,6 +32,10 @@
 	margin-right: 0.5rem;
 }
 
+.navigation__banner-icon-menu {
+	cursor: pointer;
+}
+
 .navigation__banner-icon-menu-top,
 .navigation__banner-icon-menu-middle,
 .navigation__banner-icon-menu-bottom {
@@ -42,7 +46,7 @@
 	background-color: var(--secondary-font-color);
 }
 
-.navigation__menu {
+.navigation__menu--visible {
 	background-color: var(--main-color);
 	margin: 0.5rem auto;
 	padding: 2rem 1rem;
