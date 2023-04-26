@@ -58,5 +58,43 @@
 	color: var(--secondary-font-color);
 }
 
+@media screen and (min-width: 1050px) {
+
+	.navigation__menu {
+		display: flex;
+		flex-direction: row;
+		position: absolute;
+		top: 5rem;
+		left: 15rem;
+		right: 2rem;
+		background-color: var(--main-color);
+		border-radius: 15px;
+	}
+
+	.navigation__banner-icon-menu {
+		display: none;
+	}
+
+	.navigation__banner-icon {
+		background-color: unset;
+		z-index: 1;
+	}
+
+	.navigation__menu-link {
+		padding: 1rem 2.5rem;
+		font-size: var(--navigation-font-size-desktop);
+	}
+
+	.navigation__banner-logo {
+		width: 8rem;
+		object-fit: contain;
+	}
+
+
+
+
+	
+}
+
 
 
