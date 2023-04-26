@@ -1,0 +1,25 @@
+:root {
+
+	/* Color variables */
+	--main-color: #A0A081;
+	--secondary-color: #F2A950;
+	--tertiary-color: #F2C84B;
+	--contrast-color: #F2865E;
+
+	--main-font-color: #000000;
+	--secondary-font-color: #ffffff;
+
+	--main-transparent-color: rgba(242, 134, 94, 0.4);
+	--secondary-transparent-color: rgba(160, 160, 129, 0.7);
+	--dark-transparent-color: rgba(0, 0, 0, 0.2);
+
+	/* Fontsize variables */
+	--navigation-font-size-desktop: 24px;
+
+	--headline-font-size: 20px;
+	--sub-headline-font-size: 18px;
+	--body-font-size: 16px;
+
+	--product-card-headline: 28px;
+	--product-card-sub-headline: 22px;
+}
