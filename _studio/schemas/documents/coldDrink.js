@@ -70,10 +70,15 @@ export default {
       {
          title: 'Category',
          name: 'category',
-			type: 'reference',
-			to: [
+			type: 'array',
+			of: [
 				{
-					type: 'category',
+					type: 'reference',
+               to: [
+                  {
+                     type: 'category',
+                  }
+               ]
 				}
 			]
       }
