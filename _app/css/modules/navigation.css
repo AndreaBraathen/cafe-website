@@ -56,15 +56,17 @@
 	position: relative;
 	z-index: 1;
 	background-color: var(--main-color);
-	margin: 0.5rem auto;
+	margin: 1rem auto;
 	padding: 2rem;
+	line-height: 3rem;
 	border-radius: 15px;
 	color: var(--secondary-font-color);
 	filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.7));
 }
 
 .navigation__menu-link {
-	padding: 1rem 0.5rem;
+	padding: 2rem 0.5rem;
+	color: var(--secondary-font-color);
 }
 
 @media screen and (min-width: 1050px) {
@@ -76,6 +78,7 @@
 		top: 5rem;
 		left: 15rem;
 		right: 2rem;
+		padding: 1rem;
 		background-color: var(--main-color);
 		border-radius: 15px;
 		filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.7));
