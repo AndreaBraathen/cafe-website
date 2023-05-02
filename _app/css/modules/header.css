@@ -1,4 +1,4 @@
-header {
+#header__home-page {
 	background-image: url('/_app/assets/images/cafe-5.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -20,8 +20,8 @@ header {
 		margin: 3rem auto;
 	}
 
-	header {
-		height: 60rem;
+	#header__home-page {
+		height: 50rem;
 	}
 }
 
@@ -31,7 +31,7 @@ header {
 		margin: 6rem auto;
 	}
 
-	header {
+	#header__home-page {
 		height: 70rem;
 	}
 }
