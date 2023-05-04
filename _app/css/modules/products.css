@@ -1,0 +1,122 @@
+#body-menu-page {
+	background-image: url('/_app/assets/images/cafè.jpg');
+	background-size: 100%;
+	background-repeat: repeat-y;
+}
+
+.product {
+	background-color: var(--secondary-transparent-color);
+	margin: 3rem;
+	color: var(--secondary-font-color);
+}
+
+.product__headline {
+	text-align: center;
+	padding: 1.5rem;
+	font-size: var(--mobile-headline-font-size);
+}
+
+.product__list {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	/* grid-template-rows: 20rem 20rem; */
+	gap: 2rem;
+	justify-content: center;
+}
+
+.product__item {
+	/* text-align: center; */
+	display: flex;
+	flex-direction: column;
+
+	/* grid-template-rows: 5rem 10rem; */
+	align-items: center;
+
+}
+
+.product__item-image {
+	width: 11rem;
+	padding: 1rem;
+	background-color: var(--secondary-font-color);
+	border-radius: 100%;
+	margin: 1rem;
+	text-align: center;
+}
+
+.product__item-name {
+	padding: 0.5rem 0 1rem;
+	font-size: var(--mobile-sub-headline-font-size);
+}
+
+.product__card {
+	color: var(--main-font-color);
+	/* min-height: 30rem; */
+	padding: 2rem;
+	text-align: left;
+	background-color: var(--main-light-color);
+	grid-template-columns: repeat(1, 6fr);
+	/* display: none; */
+}
+
+.product__card--active {
+	display: block;
+}
+
+@media screen and (min-width: 680px) {
+	.product__list {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+}
+
+@media screen and (min-width: 800px) {
+	.product__list {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+}
+
+@media screen and (min-width: 912px) {
+	.product__list {
+		justify-content: space-between;
+	}
+
+}
+
+@media screen and (min-width: 1050px) {
+	.product__headline {
+		font-size: var(--headline-font-size);
+	}
+
+	.product__item-name {
+		font-size: var(--sub-headline-font-size);
+	}
+
+	.product__list {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	
+}
+
+@media screen and (min-width: 1260px) {
+	.product__list {
+		grid-template-columns: repeat(5, 1fr);
+	}
+
+}
+
+@media screen and (min-width: 1495px) {
+	.product__list {
+		grid-template-columns: repeat(6, 1fr);
+	}
+
+	/* .product__card {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		padding: 2rem 0.5rem;
+		text-align: left;
+	} */
+
+}
+
+
