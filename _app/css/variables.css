@@ -5,6 +5,8 @@
 	--secondary-color: #F2A950;
 	--tertiary-color: #F2C84B;
 	--contrast-color: #F2865E;
+	--main-light-color: #ffffff;
+	--main-dark-color: #000000;
 
 	--main-font-color: #000000;
 	--secondary-font-color: #ffffff;
@@ -16,10 +18,13 @@
 	/* Fontsize variables */
 	--navigation-font-size-desktop: 24px;
 
-	--headline-font-size: 20px;
-	--sub-headline-font-size: 18px;
+	--headline-font-size: 45px;
+	--sub-headline-font-size: 25px;
 	--body-font-size: 16px;
 
 	--product-card-headline: 28px;
 	--product-card-sub-headline: 22px;
+
+	--mobile-headline-font-size: 30px;
+	--mobile-sub-headline-font-size: 20px;
 }

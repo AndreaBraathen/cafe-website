@@ -13,7 +13,9 @@ export default async function products() {
 
 	const products = await sanity.fetch(query);
 	const menu = document.querySelector('.product');
+	const menuList = document.querySelector('.product__list');
 	document.body.appendChild(menu);
+	menu.append(menuList);
 
 	function renderHTML() {
 		for (const product of products) {
@@ -68,12 +70,36 @@ export default async function products() {
 			productMayContainTitle.innerText = 'May contain traces of:'
 			productMayContainAllergens.innerText = product.mayContainTracesOf;
 
-			menu.append(productItem);
-			productItem.append(productImage, productName, productCard);
-			productCard.append(productTitle, productPrice, productDescriptionSection, productAllergensSection, productMayContainSection);
-			productDescriptionSection.append(productDescriptionTitle, productDescription);
-			productAllergensSection.append(productAllergensTitle, productAllergens);
-			productMayContainSection.append(productMayContainTitle, productMayContainAllergens);
+			// menu.append(
+			// 	productCard
+			// );
+			menuList.append(
+				productItem,
+			);
+			productItem.append(
+				productImage, 
+				productName,
+				productCard 
+			);
+			productCard.append(
+				productTitle, 
+				productPrice, 
+				productDescriptionSection, 
+				productAllergensSection, 
+				productMayContainSection
+			);
+			productDescriptionSection.append(
+				productDescriptionTitle, 
+				productDescription
+			);
+			productAllergensSection.append(
+				productAllergensTitle, 
+				productAllergens
+			);
+			productMayContainSection.append(
+				productMayContainTitle, 
+				productMayContainAllergens
+			);
 		}
 
 	}
