@@ -27,76 +27,78 @@ export default async function products() {
 			const productCard = document.createElement('div');
 			const productPrice = document.createElement('div');
 
-			const productDescriptionSection = document.createElement('div');
+			const productDescription = document.createElement('div');
 			const productDescriptionTitle = document.createElement('h3');
-			const productDescription = document.createElement('p');
+			const productDescriptionInfo = document.createElement('p');
 
-			const productAllergensSection = document.createElement('div');
-			const productAllergensTitle = document.createElement('h3');
 			const productAllergens = document.createElement('div');
+			const productAllergensTitle = document.createElement('h3');
+			const productAllergensType = document.createElement('div');
 
-			const productMayContainSection = document.createElement('div');
+			const productMayContain = document.createElement('div');
 			const productMayContainTitle = document.createElement('h3');
 			const productMayContainAllergens = document.createElement('div');
 
-			productItem.classList.add('product__item');
-			productImage.classList.add('product__item-image');
-			productName.classList.add('product__item-name');
+			productItem.classList.add('product__list-item');
+			productImage.classList.add('product__list-item-info-image');
+			productName.classList.add('product__list-item-info-name');
 
-			productCard.classList.add('product__card');
-			productTitle.classList.add('product__card-title');
-			productPrice.classList.add('product__card-price');
+			productCard.classList.add('product__list-item-card');
+			productTitle.classList.add('product__list-item-card-title');
+			productPrice.classList.add('product__list-item-card-price');
 
-			productDescriptionSection.classList.add('product__card-description-section')
-			productDescriptionTitle.classList.add('product__card-description-section-title');
-			productDescription.classList.add('product__card-description-section-info');
+			productDescription.classList.add('product__list-item-card-description')
+			productDescriptionTitle.classList.add('product__list-item-card-description-title');
+			productDescriptionInfo.classList.add('product__list-item-card-description-info');
 
-			productAllergensSection.classList.add('product__card-allergens-section');
-			productAllergensTitle.classList.add('product__card-allergens-section-title');
-			productAllergens.classList.add('product__card-allergens-section-info');
+			productAllergens.classList.add('product__list-item-card-allergens');
+			productAllergensTitle.classList.add('product__list-item-card-allergens-title');
+			productAllergensType.classList.add('product__list-item-card-allergens-info');
 
-			productMayContainSection.classList.add('product__card-may-contain-section');
-			productMayContainTitle.classList.add('product__card-may-contain-section-title');
-			productMayContainAllergens.classList.add('product__card-may-contain-section-info');
+			productMayContain.classList.add('product__list-item-card-may-contain');
+			productMayContainTitle.classList.add('product__list-item-card-may-contain-title');
+			productMayContainAllergens.classList.add('product__list-item-card-may-contain-info');
 
 			productImage.setAttribute('src', product.image);
 			productName.innerText = product.name;
 			productTitle.innerText = product.name;
 			productPrice.innerText = `$ ${product.price}0`;
 			productDescriptionTitle.innerText = 'Description:';
-			productDescription.innerText = product.description;
+			productDescriptionInfo.innerText = product.description;
 			productAllergensTitle.innerText = 'Allergens:';
-			productAllergens.innerText = product.allergens;
+			productAllergensType.innerText = product.allergens;
 			productMayContainTitle.innerText = 'May contain traces of:'
 			productMayContainAllergens.innerText = product.mayContainTracesOf;
 
-			// menu.append(
-			// 	productCard
-			// );
 			menuList.append(
 				productItem,
+				productCard
 			);
+
 			productItem.append(
-				productImage, 
+				productImage,
 				productName,
-				productCard 
 			);
+
 			productCard.append(
 				productTitle, 
 				productPrice, 
-				productDescriptionSection, 
-				productAllergensSection, 
-				productMayContainSection
+				productDescription, 
+				productAllergens, 
+				productMayContain
 			);
-			productDescriptionSection.append(
+
+			productDescription.append(
 				productDescriptionTitle, 
-				productDescription
+				productDescriptionInfo
 			);
-			productAllergensSection.append(
+
+			productAllergens.append(
 				productAllergensTitle, 
-				productAllergens
+				productAllergensType
 			);
-			productMayContainSection.append(
+
+			productMayContain.append(
 				productMayContainTitle, 
 				productMayContainAllergens
 			);
