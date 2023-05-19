@@ -34,7 +34,7 @@ export default {
       },
       {
          title: 'Ingredients',
-         name: 'ingedients',
+         name: 'ingredients',
          type: 'text',
       },
       {
