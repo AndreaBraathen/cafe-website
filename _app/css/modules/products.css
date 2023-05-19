@@ -8,6 +8,7 @@
 	background-color: var(--secondary-transparent-color);
 	margin: 3rem;
 	color: var(--secondary-font-color);
+	font-family: 'Auster';
 }
 
 .product__headline {
@@ -16,50 +17,98 @@
 	font-size: var(--mobile-headline-font-size);
 }
 
+/* About grid-auto-flow: dense --> https://css-tricks.com/expandable-sections-within-a-css-grid/ */
+
 .product__list {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
-	/* grid-template-rows: 20rem 20rem; */
-	gap: 2rem;
+	grid-template-rows: 15rem auto;
+	grid-auto-flow: dense;
+	gap: 1rem;
 	justify-content: center;
+	padding-bottom: 1.5rem;
 }
 
-.product__item {
-	/* text-align: center; */
-	display: flex;
-	flex-direction: column;
-
-	/* grid-template-rows: 5rem 10rem; */
+.product__list-item {
+	text-align: center;
+	justify-content: center;
 	align-items: center;
-
 }
 
-.product__item-image {
+.product__list-item-info-image--active{
+	border: 5px solid var(--tertiary-color);
+}
+
+.product__list-item-info-image {
 	width: 11rem;
 	padding: 1rem;
 	background-color: var(--secondary-font-color);
 	border-radius: 100%;
 	margin: 1rem;
-	text-align: center;
 }
 
-.product__item-name {
-	padding: 0.5rem 0 1rem;
+.product__list-item-info-name {
 	font-size: var(--mobile-sub-headline-font-size);
 }
 
-.product__card {
-	color: var(--main-font-color);
-	/* min-height: 30rem; */
-	padding: 2rem;
-	text-align: left;
-	background-color: var(--main-light-color);
-	grid-template-columns: repeat(1, 6fr);
-	/* display: none; */
+.product__list-item-card {
+	display: none;
 }
 
-.product__card--active {
-	display: block;
+.product__list-item-card--active {
+	grid-column: 1/-1;
+	display: flex;
+	flex-direction: column;
+	color: var(--main-font-color);
+	background-color: var(--main-light-color);
+	padding: 2rem;
+}
+
+.product__list-item-card-information {
+	margin: auto 0;
+}
+
+.product__list-item-card-image {
+	display: none;
+}
+
+.product__list-item-card-information-headline {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	padding: 1rem 0;
+}
+
+.product__list-item-card-information-title {
+	font-size: var(--mobile-headline-font-size);
+	text-transform: uppercase;
+	color: var(--tertiary-color);
+	font-weight: 700;
+	padding: 0 1rem 0 0;
+}
+
+.product__list-item-card-information-price {
+	font-family: 'Moonblossom';
+	font-size: var(--mobile-sub-headline-font-size);
+}
+
+.product__list-item-card-information-description,
+.product__list-item-card-information-allergens,
+.product__list-item-card-information-may-contain {
+	padding: 0.5rem 0;
+}
+
+.product__list-item-card-information-description-title,
+.product__list-item-card-information-allergens-title,
+.product__list-item-card-information-may-contain-title {
+	font-weight: 400;
+}
+
+.product__list-item-card-information-description-info,
+.product__list-item-card-information-allergens-info,
+.product__list-item-card-information-may-contain-info {
+	font-family: 'Moonblossom';
+	padding: 0.2rem 0;
 }
 
 @media screen and (min-width: 680px) {
@@ -74,11 +123,22 @@
 		grid-template-columns: repeat(3, 1fr);
 	}
 
+	.product__list-item-card {
+		margin: 0 2rem;
+	}
+
 }
 
 @media screen and (min-width: 912px) {
-	.product__list {
-		justify-content: space-between;
+	.product__list-item-card-image {
+		display: flex;
+		width: 20rem;
+		object-fit: contain;
+		padding: 1rem;
+	}
+
+	.product__list-item-card {
+		flex-direction: row;
 	}
 
 }
@@ -88,7 +148,14 @@
 		font-size: var(--headline-font-size);
 	}
 
-	.product__item-name {
+	.product__list-item-card-image {
+		display: flex;
+		width: 25rem;
+		object-fit: contain;
+		padding: 1rem;
+	}
+
+	.product__list-item-info-name {
 		font-size: var(--sub-headline-font-size);
 	}
 
@@ -109,13 +176,6 @@
 	.product__list {
 		grid-template-columns: repeat(6, 1fr);
 	}
-
-	/* .product__card {
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);
-		padding: 2rem 0.5rem;
-		text-align: left;
-	} */
 
 }
 
