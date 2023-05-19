@@ -4,6 +4,7 @@ import { sanity } from "../sanity.js";
 		const query = `*[_type in ["food", "hotDrink", "coldDrink"]] {
 			name,
 			description,
+			ingredients,
 			'mayContainTracesOf': mayContainTracesOf[]->typeOfAllergen,
 			'category': category[]->typeOfFood,
 			'allergens': allergens[]->typeOfAllergen,
