@@ -19,6 +19,10 @@ export default function renderMenu(products) {
 		const productDescriptionTitle = document.createElement('h3');
 		const productDescriptionInfo = document.createElement('p');
 
+		const productIngredient = document.createElement('div');
+		const productIngredientTitle = document.createElement('h3');
+		const productIngredientInfo = document.createElement('p');
+
 		const productAllergens = document.createElement('div');
 		const productAllergensTitle = document.createElement('h3');
 		const productAllergensType = document.createElement('div');
@@ -42,6 +46,10 @@ export default function renderMenu(products) {
 		productDescriptionTitle.classList.add('product__list-item-card-information-description-title');
 		productDescriptionInfo.classList.add('product__list-item-card-information-description-info');
 
+		productIngredient.classList.add('product__list-item-card-information-ingredient')
+		productIngredientTitle.classList.add('product__list-item-card-information-ingredient-title');
+		productIngredientInfo.classList.add('product__list-item-card-information-ingredient-info');
+
 		productAllergens.classList.add('product__list-item-card-information-allergens');
 		productAllergensTitle.classList.add('product__list-item-card-information-allergens-title');
 		productAllergensType.classList.add('product__list-item-card-information-allergens-info');
@@ -60,17 +68,23 @@ export default function renderMenu(products) {
 
 		productDescriptionTitle.innerText = 'Description:';
 		productDescriptionInfo.innerText = product.description;
+		productIngredientTitle.innerText = 'Ingredients:';
+		productIngredientInfo.innerText = product.ingredients;
 		productAllergensTitle.innerText = 'Allergens:';
 		productAllergensType.innerText = product.allergens;
 		productMayContainTitle.innerText = 'May contain traces of:'
 		productMayContainAllergens.innerText = product.mayContainTracesOf;
 
 		if (product.description === null) {
-			productAllergens.hidden = true;		
+			productDescription.hidden = true;
 		}
 
-		if (product.description === null) {
-			productDescription.hidden = true;
+		if (product.ingredients === null) {
+			productIngredient.hidden = true;
+		}
+
+		if (product.allergens === null) {
+			productAllergens.hidden = true;		
 		}
 
 		if (product.mayContainTracesOf === null) {
@@ -82,7 +96,7 @@ export default function renderMenu(products) {
 
 		menuList.append(
 			productItemButton,
-			productCardElement
+			productCardElement,
 		);
 
 		productItemButton.append(
@@ -102,25 +116,30 @@ export default function renderMenu(products) {
 
 		productCardInformation.append(
 			productHeadline,
-			productDescription, 
+			productDescription,
+			productIngredient, 
 			productAllergens, 
-			productMayContain
+			productMayContain,
 		)
-
 
 		productDescription.append(
 			productDescriptionTitle, 
-			productDescriptionInfo
+			productDescriptionInfo,
 		);
+
+		productIngredient.append(
+			productIngredientTitle,
+			productIngredientInfo,
+		)
 
 		productAllergens.append(
 			productAllergensTitle, 
-			productAllergensType
+			productAllergensType,
 		);
 
 		productMayContain.append(
 			productMayContainTitle, 
-			productMayContainAllergens
+			productMayContainAllergens,
 		);
 	}
 }

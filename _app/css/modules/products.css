@@ -93,18 +93,21 @@
 }
 
 .product__list-item-card-information-description,
+.product__list-item-card-information-ingredient,
 .product__list-item-card-information-allergens,
 .product__list-item-card-information-may-contain {
 	padding: 0.5rem 0;
 }
 
 .product__list-item-card-information-description-title,
+.product__list-item-card-information-ingredient-title, 
 .product__list-item-card-information-allergens-title,
 .product__list-item-card-information-may-contain-title {
 	font-weight: 400;
 }
 
 .product__list-item-card-information-description-info,
+.product__list-item-card-information-ingredient-info,
 .product__list-item-card-information-allergens-info,
 .product__list-item-card-information-may-contain-info {
 	font-family: 'Moonblossom';
