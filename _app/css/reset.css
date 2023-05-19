@@ -16,3 +16,11 @@ ul {
 a {
 	text-decoration: none;
 }
+
+button {
+	border: none;
+	background: inherit;
+	cursor: pointer;
+	color: inherit;
+	font-family: inherit;
+}
