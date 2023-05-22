@@ -14,14 +14,24 @@
 	filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.7));
 }
 
+#header-about-page {
+	background-image: url('/_app/assets/images/cafe-2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 40rem;
+}
+
 @media screen and (min-width: 1050px) {
 	.header__logo {
 		width: 22rem;
 		margin: 3rem auto;
 	}
 
-	#header__home-page {
-		height: 50rem;
+	#header__home-page,
+	#header-about-page {
+		height: 45rem;
 	}
 }
 
@@ -31,7 +41,8 @@
 		margin: 6rem auto;
 	}
 
-	#header__home-page {
+	#header__home-page,
+	#header-about-page {
 		height: 70rem;
 	}
 }
