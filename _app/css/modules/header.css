@@ -18,9 +18,15 @@
 	background-image: url('/_app/assets/images/cafe-2.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
+	background-position: 100%;
 	width: 100%;
-	height: 40rem;
+	height: 20rem;
+}
+
+@media screen and (min-width: 768px) {
+	#header-about-page {
+		height: 25rem;
+	}
 }
 
 @media screen and (min-width: 1050px) {
@@ -29,11 +35,22 @@
 		margin: 3rem auto;
 	}
 
-	#header__home-page,
-	#header-about-page {
+	#header__home-page {
 		height: 45rem;
 	}
+
+	#header-about-page {
+		height: 30rem;
+	}
 }
+
+@media screen and (min-width: 1050px) {
+	#header-about-page {
+		height: 40rem;
+	}
+}
+
+
 
 @media screen and (min-width: 1600px) {
 	.header__logo {
