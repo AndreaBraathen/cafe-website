@@ -79,44 +79,30 @@ export default {
 		{
 			title: 'Information',
 			name: 'information',
-			type: 'object',
-			options: {
-				collapsible: true,
-				collapsed: true,
-			},
-			fields: [
+			type: 'array',
+			of: [
 				{
-					title: 'Information Title',
-					name: 'informationTitle',
-					type: 'array',
-					of: [
+					type: 'object',
+					fields: [
 						{
-							type: 'string'
-						}
-					]
-				},
-				{
-					title: 'Information Image',
-					name: 'informationImage',
-					type: 'array',
-					of: [
+							title: 'Title',
+							name: 'title',
+							type: 'string',
+						},
 						{
+							title: 'Paragraph',
+							name: 'paragraph',
+							type: 'string',
+							type: 'text'
+						},
+						{
+							title: 'Image',
+							name: 'image',
 							type: 'image'
 						}
 					]
 				},
-				{
-					title: 'Information Paragraph',
-					name: 'informationParagraph',
-					type: 'array',
-					of: [
-						{
-							type: 'text'
-						}
-					]
-				}
 			]
-
 		},
 		{
 			title: 'Locations',
