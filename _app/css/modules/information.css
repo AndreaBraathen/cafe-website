@@ -1,0 +1,30 @@
+.information {
+	margin: 2rem;
+	display: grid;
+}
+
+.information__container {
+	margin: 1rem auto;
+	justify-content: center;
+	align-items: center;
+}
+
+.information__container-image {
+	width: 27rem;
+	object-fit: contain;
+}
+
+.information__container-title {
+	background: var(--main-transparent-color);
+	padding: 2rem 1rem 0.5rem 1rem ;
+	font-size: var(--mobile-sub-headline-font-size);
+	font-family: 'auster';
+	font-weight: 400;
+}
+
+.information__container-paragraph {
+	background: var(--main-transparent-color);
+	padding: 1rem 0.5rem 2rem 1rem;
+	font-size: var(--body-font-size);
+	font-family: 'moonblossom';
+} 
