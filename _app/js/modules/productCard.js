@@ -6,8 +6,6 @@ export default function productCard() {
 	const productItemButtons = document.querySelectorAll('.product__list-item');
 	const productImages = getProductImage();
 
-	console.log(productImages);
-
 
 	productItemButtons.forEach((productItemButton) => {
 		const buttonId = productItemButton.getAttribute('button-id');
