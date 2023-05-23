@@ -17,29 +17,39 @@ export default async function fetchInformation() {
 		renderHTML();
 	}
 	
-
 	function renderHTML() {
 		const informationContent = informations[0].information;
 
 		for (const information of informationContent) {
+			const textContainer = document.createElement('div');
 			const informationTitle = document.createElement('h3');
 			const informationParagraph = document.createElement('p');
-			const informationImage = document.createElement('image');
+			const imageContainer = document.createElement('div');
+			const informationImage = document.createElement('img');
 
-			informationTitle.classList.add('information__title');
-			informationParagraph.classList.add('information__paragraph');
-			informationImage.classList.add('information__image');
+			textContainer.classList.add('information__container')
+			informationTitle.classList.add('information__container-title');
+			informationParagraph.classList.add('information__container-paragraph');
+			imageContainer.classList.add('information__container')
+			informationImage.classList.add('information__container-image');
 
 			informationTitle.innerText = information.title;
 			informationParagraph.innerText = information.paragraph;
 			informationImage.setAttribute('src', information.image);
 
-			grid.appendChild(informationTitle);
+			grid.append(
+				imageContainer,
+				textContainer
+			);
+
+			textContainer.append(
+				informationTitle,
+				informationParagraph,
+			);
+
+			imageContainer.append(informationImage);
 
 		}
-
-
-
 
 	}
 }
