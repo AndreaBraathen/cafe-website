@@ -20,11 +20,15 @@
 
 	--headline-font-size: 45px;
 	--sub-headline-font-size: 25px;
+
 	--body-font-size: 16px;
+	--medium-body-font-size: 18px;
+	--large-body-font-size: 24px; 
 
 	--product-card-headline: 28px;
 	--product-card-sub-headline: 22px;
 
 	--mobile-headline-font-size: 30px;
 	--mobile-sub-headline-font-size: 20px;
+
 }
