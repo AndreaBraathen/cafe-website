@@ -26,55 +26,35 @@ export default {
 		{
 			title: 'Slideshow',
 			name: 'slideshow',
-			type: 'object',
-			options: {
-				collapsible: true,
-				collapsed: true, 
-			},
-			fields: [
+			type: 'array',
+			of: [
 				{
-					title: 'Slideshow Title',
-					name: 'slideshowTitle',
-					type: 'string',
-				},
-				{
-					title: 'Slideshow elements',
-					name: 'slideshowElements',
 					type: 'object',
 					fields: [
 						{
+							title: 'Slideshow Title',
+							name: 'slideshowTitle',
+							type: 'string',
+						},
+						{
 							title: 'Slideshow Slide',
 							name: 'slideshowSlide',
-							type: 'array',
-							of: [
-								{
-									type: 'image'
-								}
-							]
+							type: 'image',
 						},
 						{
 							title: 'Slideshow Paragraph',
-							name: 'text',
-							type: 'array',
-							of: [
-								{
-									type: 'text'
-								}
-							]
+							name: 'slideshowParagraph',
+							type: 'text',
 						},
 						{
 							title: 'Slideshow Button',
 							name: 'slideshowButton',
-							type: 'array',
-							of: [
-								{
-									type: 'string'
-								}
-							]
+							type: 'string',
 						}
+
 					]
 				},
-			]		
+			]	
 		},
 		{
 			title: 'Information',
@@ -107,74 +87,44 @@ export default {
 		{
 			title: 'Locations',
 			name: 'locations',
-			type: 'object',
-			options: {
-				collapsible: true,
-				collapsed: true,
-			},
-			fields: [
+			type: 'array',
+			of: [
 				{
-					title: 'Street Name',
-					name: 'streetName',
-					type: 'array',
-					of: [
+					type: 'object',
+					fields: [
 						{
-							type: 'string'
-						}
-					]
-				},
-				{
-					title: 'Phone Number',
-					name: 'phoneNumber',
-					type: 'array',
-					of: [
+							title: 'Street Name',
+							name: 'streetName',
+							type: 'string',
+						},
 						{
-							type: 'string'
-						}
-					]
-				},
-				{
-					title: 'Email Address',
-					name: 'emailAddress',
-					type: 'array',
-					of: [
+							title: 'Phone Number',
+							name: 'phoneNumber',
+							type: 'string',
+						},
 						{
-							type: 'string'
-						}
-					]
-				},
-				{
-					title: 'Street Address',
-					name: 'streetAddress',
-					type: 'array',
-					of: [
+							title: 'Email Address',
+							name: 'emailAddress',
+							type: 'string',
+						},
 						{
-							type: 'string'
-						}
-					]
-				},
-				{
-					title: 'Image',
-					name: 'image',
-					type: 'array',
-					of: [
+							title: 'Street Address',
+							name: 'streetAddress',
+							type: 'string',
+						},
 						{
-							type: 'image'
-						}
-					]
-				},
-				{
-					title: 'Map location',
-					name: 'mapLocation',
-					type: 'array',
-					of: [
+							title: 'Image',
+							name: 'image',
+							type: 'image',
+						},
 						{
-							type: 'geopoint'
+							title: 'Map location',
+							name: 'mapLocation',
+							type: 'geopoint',
 						}
 					]
 				},
 			]
-
 		},
 		{
 			title: 'Footer',
