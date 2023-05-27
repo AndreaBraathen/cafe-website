@@ -21,16 +21,16 @@ export default async function fetchInformation() {
 		const informationContent = informations[0].information;
 
 		for (const information of informationContent) {
+			const gridContainer = document.createElement('div');
 			const textContainer = document.createElement('div');
 			const informationTitle = document.createElement('h3');
 			const informationParagraph = document.createElement('p');
-			const imageContainer = document.createElement('div');
 			const informationImage = document.createElement('img');
 
-			textContainer.classList.add('information__container')
-			informationTitle.classList.add('information__container-title');
-			informationParagraph.classList.add('information__container-paragraph');
-			imageContainer.classList.add('information__container')
+			gridContainer.classList.add('information__container');
+			textContainer.classList.add('information__container-text');
+			informationTitle.classList.add('information__container-text-title');
+			informationParagraph.classList.add('information__container-text-paragraph');
 			informationImage.classList.add('information__container-image');
 
 			informationTitle.innerText = information.title;
@@ -38,16 +38,18 @@ export default async function fetchInformation() {
 			informationImage.setAttribute('src', information.image);
 
 			grid.append(
-				imageContainer,
-				textContainer
+				gridContainer	
 			);
+
+			gridContainer.append(
+				informationImage,
+				textContainer
+			)
 
 			textContainer.append(
 				informationTitle,
 				informationParagraph,
 			);
-
-			imageContainer.append(informationImage);
 
 		}
 
