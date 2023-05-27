@@ -1,0 +1,56 @@
+.introduction {
+	background: var(--contrast-color);
+	padding: 3rem 2rem;
+	text-align: center;
+}
+
+.introduction__paragraph {
+	font-family: 'Auster';
+	font-size: var(--body-font-size);
+}
+
+.introduction__button {
+	font-family: 'moonblossom';
+	padding: 1.5rem 0 0 0;
+	color: var(--secondary-font-color);
+	font-size: var(--body-font-size);
+}
+
+@media screen and (min-width: 650px) {
+	.introduction__paragraph, .introduction__button {
+		font-size: var(--medium-body-font-size);
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.introduction {
+		padding: 4rem 5rem;
+	}
+
+	.introduction__paragraph, .introduction__button {
+		font-size: var(--medium-body-font-size);
+		padding-bottom: 0.7rem;
+	}
+}
+
+@media screen and (min-width: 1050px) {
+	.introduction {
+		padding: 5rem;
+	}
+
+	.introduction__paragraph, .introduction__button {
+		font-size: var(--large-body-font-size);
+		padding-bottom: 0.7rem;
+	}
+}
+
+@media screen and (min-width: 1250px) {
+	.introduction {
+		padding: 4rem 9rem;
+	}
+
+	.introduction__paragraph, .introduction__button {
+		font-size: var(--large-body-font-size);
+		padding-bottom: 0.7rem;
+	}
+}
