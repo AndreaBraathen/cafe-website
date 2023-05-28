@@ -1,0 +1,8 @@
+.location__headline {
+	margin: 2rem 0;
+	padding: 1rem 2rem;
+	background: var(--contrast-color);
+	font-family: 'Moonblossom';
+	font-size: var(--mobile-sub-headline-font-size);
+
+}

@@ -23,8 +23,18 @@
 	height: 20rem;
 }
 
+#header-location-page {
+	background-image: url('/_app/assets/images/sofas.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right 30% bottom 45%;
+	width: 100%;
+	height: 20rem;
+}
+
 @media screen and (min-width: 768px) {
-	#header-about-page {
+	#header-about-page,
+	#header-location-page {
 		height: 25rem;
 	}
 }
@@ -39,13 +49,15 @@
 		height: 45rem;
 	}
 
-	#header-about-page {
+	#header-about-page,
+	#header-location-page {
 		height: 30rem;
 	}
 }
 
 @media screen and (min-width: 1050px) {
-	#header-about-page {
+	#header-about-page,
+	#header-location-page {
 		height: 40rem;
 	}
 }
@@ -59,7 +71,8 @@
 	}
 
 	#header__home-page,
-	#header-about-page {
+	#header-about-page,
+	#header-location-page {
 		height: 70rem;
 	}
 }
