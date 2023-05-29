@@ -85,8 +85,8 @@ export default {
 			]
 		},
 		{
-			title: 'Locations',
-			name: 'locations',
+			title: 'Location',
+			name: 'location',
 			type: 'array',
 			of: [
 				{
