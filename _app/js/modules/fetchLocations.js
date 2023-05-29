@@ -28,6 +28,7 @@ export default async function fetchLocations() {
 			const locationName = document.createElement('h2');
 			const locationStreet = document.createElement('h3');
 			const locationInformation = document.createElement('div');
+			const locationContact = document.createElement('div');
 			const locationAddress = document.createElement('div');
 			const locationNumber = document.createElement('div');
 			const locationEmail = document.createElement('div');
@@ -39,9 +40,10 @@ export default async function fetchLocations() {
 			locationName.classList.add('location__container-information-headline-name')
 			locationStreet.classList.add('location__container-information-headline-street');
 			locationInformation.classList.add('location__container-information');
-			locationAddress.classList.add('location__container-information-address');
-			locationNumber.classList.add('location__container-information-number');
-			locationEmail.classList.add('location__container-information-email');
+			locationContact.classList.add('location__container-information-contact')
+			locationAddress.classList.add('location__container-information-contact-address');
+			locationNumber.classList.add('location__container-information-contact-number');
+			locationEmail.classList.add('location__container-information-contact-email');
 			// locationMap.classList.add('location__container-number');
 			locationImage.classList.add('location__container-image');
 
@@ -70,9 +72,13 @@ export default async function fetchLocations() {
 
 			locationInformation.append(
 				locationTitle,
-				locationAddress,
+				locationContact,
+			);
+
+			locationContact.append(
 				locationNumber,
 				locationEmail,
+				locationAddress
 			)
 		}
 	}
