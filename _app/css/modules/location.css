@@ -3,6 +3,113 @@
 	padding: 1rem 2rem;
 	background: var(--contrast-color);
 	font-family: 'Moonblossom';
-	font-size: var(--mobile-sub-headline-font-size);
-
+	text-align: center;
+	font-size: var(--mobile-headline-font-size);
 }
+
+.location__container {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.location__container-image {
+	width: 350px;
+	height: 300px;
+	object-fit: contain;
+	margin: 0.5rem auto;
+}
+
+.location__container-information {
+	text-align: center;
+	font-family: 'Auster';
+	margin: 0.5rem 0;
+}
+
+.location__container-information-headline {
+	background-color: var(--main-transparent-color);
+	padding: 1.5rem;
+}
+
+.location__container-information-headline-street {
+	padding-top: 0.5rem;
+	font-family: 'Moonblossom';
+}
+
+.location__container-information-contact{
+	margin: 1rem;
+	font-size: var(--medium-body-font-size);
+}
+
+.location__container-information-contact-email {
+	padding: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+	.location__container-image {
+		width: 500px;
+		height: 400px;
+		object-fit: cover;
+		margin: 0.5rem auto;
+	}
+
+	.location__container {
+		margin: 4rem 0;
+	}
+
+	.location__headline {
+		font-size: var(--medium-headline-font-size);
+	}
+
+	.location__container-information-headline-name {
+		font-size: var(--medium-headline-font-size);
+	}
+
+	.location__container-information-headline-street {
+		font-size: var(--sub-headline-font-size);
+	}
+
+	.location__container-information-contact{
+		font-size: var(--large-body-font-size);
+		margin: 2.5rem;
+	}
+}
+
+@media screen and (min-width: 1050px) {
+	.location__headline {
+		font-size: var(--headline-font-size);
+	}
+
+	.location__container {
+		grid-template-columns: 1fr 1fr;
+		margin: 5rem 0;
+		justify-items: center;
+		align-items: center;
+	}
+
+	.location__container:nth-child(even) {
+		direction: rtl;
+	}
+
+	.location__container-image {
+		width: 600px;
+		height: 500px;
+		margin: 0;
+		justify-self: end;
+		z-index: 1;
+	}
+
+	.location__container-information {
+		display: grid;
+		align-items: center;
+		height: 20rem;
+		width: 300%;
+	}
+}
+
+
+
+
+
+
+
+
