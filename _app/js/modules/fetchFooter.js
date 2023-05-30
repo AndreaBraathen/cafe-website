@@ -14,7 +14,7 @@ export default async function fetchFooter() {
 		}
 	 }`;
 
-	const grid = document.querySelector('.footer');
+	const grid = document.querySelector('.footer__main');
 	const footerElements = await sanity.fetch(query);
 
 	if (grid) {
@@ -50,18 +50,15 @@ export default async function fetchFooter() {
 					listItem.innerText = link.linkText;
 				}
 				footerLinks.appendChild(listItem);
-				
 			}
 
-
-			footerLogo.classList.add('footer__logo');
-			footerAddress.classList.add('footer__address');
-			footerContact.classList.add('footer__contact-info');
-			footerContactHeadline.classList.add('footer__contact-info-headline')
-			footerContactList.classList.add('footer__contact-info-links');
-			footerLinks.classList.add('footer__links');
+			footerLogo.classList.add('footer__main-logo');
+			footerAddress.classList.add('footer__main-address');
+			footerContact.classList.add('footer__main-contact-info');
+			footerContactHeadline.classList.add('footer__main-contact-info-headline')
+			footerContactList.classList.add('footer__main-contact-info-links');
+			footerLinks.classList.add('footer__main-links');
 			
-
 			footerLogo.setAttribute('src', footerData.logo);
 			footerAddress.innerText = footerData.address;
 			footerContactHeadline.innerText = 'Contact Us';
