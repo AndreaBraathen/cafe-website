@@ -146,7 +146,25 @@ export default {
 					type: 'array',
 					of: [
 						{
-							type: 'url'
+							type: 'object',
+							fields: [
+								{
+									title: 'Link text',
+									name: 'linkText',
+									type: 'string',
+								},
+								{
+									title: 'Url',
+									name: 'url',
+									type: 'url',
+								},
+								{
+									title: 'Is hypertext',
+									name: 'isHypertext',
+									type: 'boolean',
+									description: 'Check this is the link should be a hypertext link',
+								}
+							]
 						}
 					]
 				},
