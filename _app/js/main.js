@@ -4,6 +4,7 @@ import renderMenu from "./modules/renderMenu.js";
 import productCard from "./modules/productCard.js";
 import fetchInformation from "./modules/fetchInformation.js";
 import fetchLocations from "./modules/fetchLocations.js";
+import fetchFooter from "./modules/fetchFooter.js";
 
 const fetchedProducts = await fetchProducts(); 
 
@@ -12,4 +13,5 @@ renderMenu(fetchedProducts);
 productCard(fetchedProducts);
 fetchInformation();
 fetchLocations();
+fetchFooter();
 
