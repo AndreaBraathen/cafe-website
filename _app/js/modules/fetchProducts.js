@@ -10,7 +10,8 @@ import { sanity } from "../sanity.js";
 			'allergens': allergens[]->typeOfAllergen,
 			price,
 			_id,
-			'image': image.asset->url
+			'image': image.asset->url,
+			alternativeText
 		 }`;
 	
 		const products = await sanity.fetch(query);

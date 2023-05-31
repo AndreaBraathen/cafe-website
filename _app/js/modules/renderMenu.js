@@ -62,10 +62,13 @@ export default function renderMenu(products) {
 			// productItemButton.addEventListener('click', productCard);
 	
 			productImage.setAttribute('src', product.image);
+			productImage.setAttribute('alt', product.alternativeText);
 			productName.innerText = product.name;
 			productTitle.innerText = product.name;
 			productPrice.innerText = `$ ${product.price}0`;
 			productCardImage.setAttribute('src', product.image);
+			productCardImage.setAttribute('alt', product.alternativeText);
+			
 	
 			productDescriptionTitle.innerText = 'Description:';
 			productDescriptionInfo.innerText = product.description;
