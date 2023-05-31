@@ -28,6 +28,11 @@ export default {
          type: 'image',
       },
       {
+         title: 'Alternative Text',
+         name: 'alternativeText',
+         type: 'string',
+      },
+      {
          title: 'Description',
          name: 'description',
          type: 'text',
