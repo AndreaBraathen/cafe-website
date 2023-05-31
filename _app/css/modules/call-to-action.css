@@ -1,0 +1,115 @@
+.main__call-to-action {
+	background: var(--secondary-color);
+	font-size: var(--body-font-size);
+	padding: 3rem;
+	font-family: 'Auster';
+	color: var(--secondary-font-color);
+}
+
+.main__call-to-action-paragraph {
+	text-align: center;
+	font-weight: 700;
+	padding: 0.5rem 0 2rem;
+	text-shadow: 0px 4px 4px var(--dark-transparent-color);
+}
+
+.main__call-to-action-button {
+	display: flex;
+	justify-content: center;
+}
+
+.main__call-to-action-button-link {
+	background-color: var(--dark-transparent-color);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	border-radius: 100%;
+	width: 6rem;
+	height: 6rem;
+	margin: 0 0.5rem;
+	font-style: italic;
+}
+
+.main__call-to-action-button-link div {
+	text-align: center;
+	position: relative;
+	top: 2.3rem;
+}
+
+#button-drinks {
+	background-image: url('/_app/assets/images/pepsi-max-mango.png');
+}
+
+#button-food {
+	background-image: url('/_app/assets/images/focaccia-italiano.png');
+}
+
+#button-sweets {
+	background-image: url('/_app/assets/images/cardamom-bun.png')
+}
+
+@media screen and (min-width: 690px) {
+	.main__call-to-action {
+		font-size: var(--medium-body-font-size);
+		padding: 3rem 6rem;
+	}
+
+	.main__call-to-action-button-link {
+		width: 7rem;
+		height: 7rem;
+		border-radius: 100%;
+		background-size: contain;
+		margin: 0 0.5rem;
+	}
+}
+
+	@media screen and (min-width: 850px) {
+		.main__call-to-action {
+			font-size: var(--large-body-font-size);
+			padding: 3rem 8rem;
+		}
+	
+		.main__call-to-action-button-link {
+			width: 10rem;
+			height: 10rem;
+			background-size: contain;
+			margin: 0 0.5rem;
+		}
+
+		.main__call-to-action-button-link div {
+			top: 3.5rem;
+		}
+	}
+
+	@media screen and (min-width: 1150px) {
+		.main__call-to-action {
+			font-size: var(--sub-headline-font-size);
+			padding: 3rem 12rem;
+		}
+
+		.main__call-to-action-paragraph {
+			padding: 1rem 8rem 3rem;
+		}
+
+	}
+
+	@media screen and (min-width: 1500px) {
+		.main__call-to-action {
+			font-size: var(--medium-headline-font-size);
+			padding: 7rem 12rem;
+		}
+
+		.main__call-to-action-paragraph {
+			padding: 1rem 8rem 3rem;
+		}
+
+		.main__call-to-action-button-link {
+			margin: 0 1.5rem;
+		}
+
+	}
+
+
+
+
+
