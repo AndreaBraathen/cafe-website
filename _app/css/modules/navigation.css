@@ -65,12 +65,10 @@
 }
 
 .navigation__menu-link {
-	/* padding: 2rem 0.5rem; */
 	color: var(--secondary-font-color);
 }
 
 @media screen and (min-width: 1050px) {
-
 	.navigation__menu {
 		display: flex;
 		flex-direction: row;
@@ -103,12 +101,7 @@
 	.navigation__banner-logo {
 		width: 8rem;
 		object-fit: contain;
-	}
-
-
-
-
-	
+	}	
 }
 
 
