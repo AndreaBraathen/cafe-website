@@ -38,23 +38,4 @@ export default Structure => {
 				documentTypeListItem('category'),
 				documentTypeListItem('allergen'),
 			])
-
-
-				
-			// .items([
-			// 	documentTypeListItem('menuItem'),
-
-			// 	divider(),
-
-			// 	documentTypeListItem('babyFood'),
-			// 	documentTypeListItem('coldDrink'),
-			// 	documentTypeListItem('hotDrink'),
-			// 	documentTypeListItem('salad'),
-			// 	documentTypeListItem('sandwich'),
-			// 	documentTypeListItem('sweet'),
-
-			// ])
-			
-			
-
 }

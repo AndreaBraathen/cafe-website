@@ -16,35 +16,5 @@ export default {
 				source: 'name'
 			}
       },
-      // {
-      //    title: 'Menu selection',
-      //    name: 'menuSelection',
-      //    type: 'array',
-      //    of: [
-      //       {
-      //          type: 'reference',
-      //          to: [
-      //             {
-      //                type: 'babyFood'
-      //             },
-      //             {
-      //                type: 'coldDrink'
-      //             },
-      //             {
-      //                type: 'hotDrink'
-      //             },
-      //             {
-      //                type: 'salad'
-      //             },
-      //             {
-      //                type: 'sandwich'
-      //             },
-      //             {
-      //                type: 'sweet'
-      //             },
-      //          ]
-      //       }
-      //    ]
-      // },
    ]
 }

@@ -4,6 +4,8 @@ export default function renderMenu(products) {
 	const menuList = document.querySelector('.product__list');
 
 	if (menuList) {
+
+		// Creates DOM-elements
 		for (const product of products) {
 			const productItemButton = document.createElement('button');
 			const productImage = document.createElement('img');
@@ -32,6 +34,7 @@ export default function renderMenu(products) {
 			const productMayContainTitle = document.createElement('h3');
 			const productMayContainAllergens = document.createElement('div');
 	
+			// Gives each DOM-element a class-name
 			productItemButton.classList.add('product__list-item');
 			productImage.classList.add('product__list-item-info-image');
 			productName.classList.add('product__list-item-info-name');
@@ -59,8 +62,7 @@ export default function renderMenu(products) {
 			productMayContainTitle.classList.add('product__list-item-card-information-may-contain-title');
 			productMayContainAllergens.classList.add('product__list-item-card-information-may-contain-info');
 	
-			// productItemButton.addEventListener('click', productCard);
-	
+			// Gives the DOM-element the fetched data from Sanity
 			productImage.setAttribute('src', product.image);
 			productImage.setAttribute('alt', product.alternativeText);
 			productName.innerText = product.name;
@@ -69,7 +71,6 @@ export default function renderMenu(products) {
 			productCardImage.setAttribute('src', product.image);
 			productCardImage.setAttribute('alt', product.alternativeText);
 			
-	
 			productDescriptionTitle.innerText = 'Description:';
 			productDescriptionInfo.innerText = product.description;
 			productIngredientTitle.innerText = 'Ingredients:';
@@ -79,6 +80,7 @@ export default function renderMenu(products) {
 			productMayContainTitle.innerText = 'May contain traces of:'
 			productMayContainAllergens.innerText = product.mayContainTracesOf;
 	
+			// Creates a rule that when there are no information, there are no headlines present either
 			if (product.description === null) {
 				productDescription.hidden = true;
 			}
@@ -95,9 +97,11 @@ export default function renderMenu(products) {
 				productMayContain.hidden = true;
 			}
 	
+			// This is the ids for the product card 
 			productItemButton.setAttribute('button-id', product._id);
 			productCardElement.setAttribute('card-id', product._id);
 	
+			// Places the different elements in the DOM to render a product list section 
 			menuList.append(
 				productItemButton,
 				productCardElement,
