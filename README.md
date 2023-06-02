@@ -11,15 +11,16 @@ Check out the website by clicking on this link:
 https://happyclouds-coffeehouse.netlify.app/index.html
 
 # Features on the website:
-Navigation: A responsive navigation that is hidden on smaller screens.
+**Navigation:**
+A responsive navigation that is hidden on smaller screens.
 
-## Responsive Design: 
+**Responsive Design:** 
 A fully responsive design, created mobile-first with today's consumers in mind.
 
-## Menu List: 
+**Menu List:** 
 All products displayed in a list with name and image.
 
-## Menu List Details: 
+**Menu List Details:** 
 Click any product to see more information about each product such as description, price, allergies, category etc. 
 
 # Technologies Used
@@ -41,6 +42,7 @@ Click any product to see more information about each product such as description
 https://happyclouds-coffeehouse.netlify.app/index.html
 
 **Sanity Studio deployed to:**
+https://happyclouds-coffeehouse.sanity.studio/cafe
 
 ## GitHub
 **GitHub Repository:**
