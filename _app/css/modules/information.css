@@ -26,13 +26,23 @@
 
 .information__container-text {
 	background: var(--main-transparent-color);
-	max-width: 25rem;
+	max-width: 17rem;
 	margin: auto;
 }
 
 .information__container-image {
-	max-width: 25rem;
+	max-width: 17rem;
 	margin: auto;
+}
+
+@media screen and (min-width:440px) {
+	.information__container-text {
+		max-width: 25rem;
+	}
+
+	.information__container-image {
+		max-width: 25rem;
+	}
 }
 
 @media screen and (min-width: 768px) {
