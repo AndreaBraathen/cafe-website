@@ -13,7 +13,7 @@
 }
 
 .location__container-image {
-	width: 350px;
+	width: 300px;
 	height: 300px;
 	object-fit: contain;
 	margin: 0.5rem auto;
@@ -42,6 +42,13 @@
 
 .location__container-information-contact-email {
 	padding: 1rem 0;
+}
+
+@media screen and (min-width: 425px) {
+	.location__container-image {
+		width: 350px;
+		height: 300px;
+	}	
 }
 
 @media screen and (min-width: 768px) {

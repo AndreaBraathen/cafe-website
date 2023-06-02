@@ -74,9 +74,9 @@
 
 .product__list-item-card-information-headline {
 	display: flex;
+	flex-direction: column;
 	justify-content: left;
-	align-items: center;
-	padding: 1rem 0;
+	padding: 0;
 }
 
 .product__list-item-card-information-title {
@@ -90,6 +90,7 @@
 .product__list-item-card-information-price {
 	font-family: 'Moonblossom';
 	font-size: var(--mobile-sub-headline-font-size);
+	padding: 0.7rem 0;
 }
 
 .product__list-item-card-information-description,
@@ -127,6 +128,17 @@
 
 	.product__list-item-card {
 		margin: 0 2rem;
+	}
+
+	.product__list-item-card-information-headline {
+		align-items: center;
+		flex-direction: row;
+	}
+
+	.product__list-item-card-information-price {
+		font-family: 'Moonblossom';
+		font-size: var(--mobile-sub-headline-font-size);
+		padding: 0;
 	}
 
 }
@@ -171,7 +183,7 @@
 	}
 }
 
-@media screen and (min-width: 1495px) {
+@media screen and (min-width: 1595px) {
 	.product__list {
 		grid-template-columns: repeat(6, 1fr);
 	}
